@@ -1,0 +1,64 @@
+# Week 1 – Network Traffic Analysis Report
+
+**Project:** Network Traffic Analysis Using Wireshark  
+**Environment:** Windows 11, Kali Linux, Oracle VirtualBox  
+**Student:** Lokesh Reddy
+
+## 1. Objective
+To capture and analyze network traffic, identify common protocols, examine network conversations, and visualize packet activity using Wireshark.
+
+## 2. Network Configuration
+- Kali Linux IPv4 address: 10.0.0.3/24
+- Default gateway: 10.0.0.1
+- Network interface: eth0
+- Internet connectivity: Verified successfully
+- DNS resolution: Observed in the packet capture
+
+## 3. Traffic Capture
+A network capture was saved as `Week1_network_capture.pcapng`. The capture contained 1,076 packets.
+
+## 4. Protocol Hierarchy
+The Wireshark Protocol Hierarchy analysis identified:
+- IPv4: 1,068 packets
+- TCP: 976 packets
+- UDP: 82 packets
+- DNS: 32 packets
+- TLS: 252 packets
+- HTTP: 16 packets
+- ICMP: 10 packets
+
+These protocol counts are hierarchical and may overlap; they should not be added together as independent totals.
+
+## 5. Conversations Analysis
+
+The Conversations window was used to examine IPv4, TCP, and UDP communication between endpoints. The capture showed traffic involving local network addresses and external services.
+
+## 6. I/O Graph Analysis
+
+The I/O Graph displayed packet activity over time. Traffic spikes and TCP-related events were visible during the capture period.
+
+## 7. Network Flow
+
+The network flow diagram represents the Windows laptop, DNS server, and external Internet services. DNS queries and responses use DNS transport, while HTTPS traffic commonly uses TCP port 443 with TLS encryption.
+
+## 8. Observations
+
+- Internet connectivity was verified from Kali Linux with successful ping responses and 0% packet loss.
+- DNS queries and responses were observed in Wireshark.
+- TCP and TLS traffic formed a substantial portion of the captured traffic.
+- TCP retransmission and duplicate acknowledgment indicators appeared in some packets. These observations alone do not establish a network fault.
+- The capture demonstrated how Wireshark can be used to inspect protocols, endpoints, conversations, and traffic patterns.
+
+## 9. Conclusion
+
+The Week 1 exercise covered basic network connectivity verification and practical packet analysis using Wireshark. The capture, protocol hierarchy, conversations, I/O graph, and network flow diagram provide evidence of the analysis performed.
+
+## 10. Deliverables
+
+- Week1_network_capture.pcapng
+- Week1_Protocol_Hierarchy.png
+- Week1_Conversations.png
+- Week1_IO_Graph.pdf
+- Week1_Network_Flow.png
+- Week1_Network_Observations.txt
+- Week1_Final_Report.txt

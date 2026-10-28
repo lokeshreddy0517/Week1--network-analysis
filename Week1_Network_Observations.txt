@@ -1,0 +1,32 @@
+# Week 1: Network Traffic Observation Report
+
+**Name:** Neelapu Lokesh Reddy  
+**Project:** Network Traffic Analysis Using Wireshark  
+**Capture File:** Week1_network_capture.pcapng  
+**Tool:** Wireshark 4.6.6
+
+## 10 Network Traffic Observations
+
+1. **IPv4:** The capture contains IPv4 packets used for communication between network devices.
+
+2. **DNS:** DNS queries and responses are visible. DNS helps resolve domain names to IP addresses.
+
+3. **TCP:** TCP is the dominant transport protocol in the captured traffic.
+
+4. **UDP:** UDP packets are also present in the capture.
+
+5. **TLS:** TLS traffic is visible, indicating encrypted communication with remote services.
+
+6. **HTTPS:** TCP connections using destination port 443 appear in the capture, consistent with HTTPS traffic.
+
+7. **QUIC:** QUIC traffic appears in the Protocol Hierarchy, indicating that some communications use QUIC.
+
+8. **ICMP:** ICMP packets are present and can be used for network diagnostics and error reporting.
+
+9. **TCP Retransmissions:** Wireshark flags some packets as retransmissions. These can indicate packet loss or delivery issues, but require further investigation.
+
+10. **Traffic Statistics:** The Protocol Hierarchy, Conversations and I/O Graphs provide different views of protocol distribution, communication endpoints and packet activity over time.
+
+## Conclusion
+
+Wireshark helped me observe network protocols, DNS resolution, encrypted traffic, transport-layer communication and traffic statistics. This exercise improved my understanding of practical network traffic analysis.
